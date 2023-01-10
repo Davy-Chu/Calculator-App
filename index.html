@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="calculator" id="keys">
+                <table>
+                    <tr>
+                        <td colspan="4">
+                            <input type="text" id="display" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="num" id="b1" value="1" onclick="set('1')">
+                        </td>
+                        <td>
+                            <input type="button" name="num" id="b2" value="2" onclick="set('2')">
+                        </td>
+                        <td>
+                            <input type="button" name="num" id="b3" value="3" onclick="set('3')">
+                        </td>
+                        <td>
+                            <input type="button" name="operator" id="bAdd" value="+" onclick="set('+')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="num" id="b4" value="4" onclick="set('4')">
+                        </td>
+                        <td>
+                            <input type="button" name="num" id="b5" value="5" onclick="set('5')">
+                        </td>
+                        <td>
+                            <input type="button" name="num" id="b6" value="6" onclick="set('6')">
+                        </td>
+                        <td>
+                            <input type="button" name="operator" id="bsub" value="-" onclick="set('-')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="num" id="b7" value="7" onclick="set('7')">
+                        </td>
+                        <td>
+                            <input type="button" name="num" id="b8" value="8" onclick="set('8')">
+                        </td>
+                        <td>
+                            <input type="button" name="num" id="b9" value="9" onclick="set('9')">
+                        </td>
+                        <td>
+                            <input type="button" name="operator" id="bmulti" value="x" onclick="set('*')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="num" id="b0" value="0" onclick="set('0')">
+                        </td>
+                        <td>
+                            <input type="button" name="num" id="bDec" value="." onclick="set('.')">
+                        </td>
+                        <td>
+                            <input type="button" id="bPer" value="%">
+                        </td>
+                        <td>
+                            <input type="button" name="operator" id="bdiv" value="÷" onclick="set('/')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="num" id="bLbr" value="(" onclick="set('(')">
+                        </td>
+                        <td>
+                            <input type="button" name="num" id="bRbr" value=")" onclick="set(')')">
+                        </td>
+                        <td><input type="button" name="operator" id="bEqual" value="=" onclick="answer()"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
